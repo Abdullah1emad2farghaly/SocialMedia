@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <!-- link Style -->
+    <link rel="stylesheet" href="file.css/social-media.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="file.css/brands.min.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="file.css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Start NavBar -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Social Media</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Welcom to the social networking application
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save Data</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="nav container-fluid">
+        <label for="drop" class="fs-2 position-absolute d-block d-sm-none">
+            <div class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-bars"></i></div>
+        </label>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-house-chimney me-2"></i>
+                        <span class="fs-5">Logo</span>
+                    </button>
+                </li >
+                <li class="d-none d-sm-block">
+                    <a href="#" class="py-2 ps-4  pe-4"><i class="fa-solid fa-earth-americas"></i></a>
+                </li>
+                <li class="d-none d-sm-block">
+                    <a href="#" class="py-2 ps-4  pe-4"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li class="d-none d-sm-block">
+                    <a href="#" class="py-2 ps-4  pe-4"><i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="position-relative pe-3 ps-2 d-none d-sm-block">
+                    <a href="#" class="px-4 py-2"><i class="fa-solid fa-bell"></i></a>
+                    <ul class="nisted position-absolute pe-0 ps-0 ">
+                        <li>
+                            <a href="#">One new friend request</a>
+                        </li>
+                        <li>
+                            <a href="#">John Doe posted on your wall</a>
+                        </li>
+                        <li>
+                            <a href="#">Jane likes your post</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="img ">
+                <a href="#" class="d-none d-sm-block">
+                    <img src="imgs/nav.png" alt="" class="">
+                </a>
+            </div>
+        </nav>
+        <input class="d-none check" type="checkbox" id="drop">
+        <div class="menu d-sm-none">
+            <div><a href="#">Link 2</a></div>
+            <div><a href="#">Link 3</a></div>
+            <div><a href="#">My Profile</a></div>
+        </div>
+    </div>  
+    <!-- End NavBar -->
+
+    <div class="social ">
+        <div class="container-fluid">
+            <div class="row z-0">
+                <!-- start left side -->
+                <div class="left-side col-sm-3">
+                    <!-- start ptofile -->
+                    <div class="profile mb-3">
+                        <div class="title border-bottom text-center pt-3 pb-4">
+                            <p class="fs-5">My Profile</p>
+                            <img src="imgs/avatar3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="data lh-lg ms-3 mt-3 pb-2">
+                            <div class="pt-2 pb-2">
+                                <span> <i class="fa-solid fa-pencil me-3"></i></span>
+                                Designer, UI
+                            </div>
+                            <div class=" pb-2 ">
+                                <span><i class="fa-solid fa-house-chimney me-3"></i></span>
+                                London, UK
+                            </div>
+                            <div class=" pb-2 ms-1">
+                                <span><i class="fa-solid fa-cake-candles me-3"></i></span>
+                                April 1, 1988
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end profile -->
+                    <!-- start group -->
+                    <div class="group mb-3">
+                        <input type="checkbox" id="fcheck" class="d-none">
+                        <label for="fcheck" class="d-block">
+                            <div class="pt-2 ps-3 pb-2 first one">
+                                <span class="me-3"><i class="fa-solid fa-circle-user"></i></span>
+                                My Groups
+                            </div>
+                            <div class="text1 text d-none bg-white p-3">
+                                Some Text ... 
+                            </div>
+                        </label>
+                        <input type="checkbox" id="scheck" class="d-none">
+                        <label for="scheck" class="d-block">
+                            <div class="second one pt-2 pb-2 ps-3">
+                                <span class="me-3"><i class="fa-regular fa-calendar"></i></span>
+                                My Events
+                            </div>
+                            <div class="text2 text d-none bg-white p-3">
+                                Some Other Text ... 
+                            </div>
+                        </label>
+                        <input type="checkbox" id="tcheck" class="d-none">
+                        <label for="tcheck" class="d-block">
+                            <div class="third one pt-2 ps-3 pb-2">
+                                <span class="me-3"><i class="fa-solid fa-image"></i></span>
+                                My Photos
+                            </div>
+                            <div class="text3 container photo">
+                                <div class="text  bg-white  row pt-3 pb-3">
+                                    <div class="col-sm-6 p-3">
+                                        <img src="imgs/nature (1).jpg" alt="" class="img-fluid w-100 mb-1">
+                                    </div>
+                                    <div class="col-sm-6 p-3">
+                                        <img src="imgs/forest.jpg" alt="" class=" img-fluid w-100 mb-1">
+                                    </div>
+                                    <div class="col-sm-6 p-3">
+                                        <img src="imgs/nature (1).jpg" alt="" class="img-fluid w-100 mb-1">
+                                    </div>
+                                    <div class="col-sm-6 p-3">
+                                        <img src="imgs/nature.jpg" alt="" class="img-fluid w-100 mb-1">
+                                    </div>
+                                    <div class="col-sm-6 p-3">
+                                        <img src="imgs/forest.jpg" alt="" class="img-fluid w-100  mb-1">
+                                    </div>
+                                    <div class="col-sm-6 p-3">
+                                        <img src="imgs/forest.jpg" alt="" class="img-fluid w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- end group -->
+                    <!-- start interests -->
+                    <div class="interests mt-3 d-none d-sm-block pb-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 p-3 ps-3">
+                                    Interests
+                                </div>
+                                <div class="spans col-12 ">
+                                    <span class="ps-1 pe-1 one font">News</span> 
+                                    <span class="ps-1 pe-1 one font">W3Schools</span> 
+                                    <span class="ps-1 pe-1 one font">Labels</span> 
+                                    <span class="ps-1 pe-1 one font">Games</span> 
+                                    <span class="ps-1 pe-1 one font">Friends</span> 
+                                    <span class="ps-1 pe-1 one font">Games</span> 
+                                    <span class="ps-1 pe-1 one font">Friends</span> 
+                                    <span class="ps-1 pe-1 one font">Food</span> 
+                                    <span class="ps-1 pe-1 one font">Design</span> 
+                                    <span class="ps-1 pe-1 one font">Art</span> 
+                                    <span class="ps-1 pe-1 one font">Photos</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end interests -->
+                    <!-- Start Hey -->
+                    <input type="checkbox" id="hey" class="d-none box" >
+                    <div class="Hey position-relative mt-3 mb-3 d-none d-sm-block">
+                        <label for="hey" class="mt-3 position-absolute">
+                            <div class="close d-flex justify-content-center align-items-center ">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </label>
+                        <div class="hey p-3 ">
+                            <p class="fs-5 fw-medium">
+                                Hey!
+                            </p>
+                            <p>
+                                People are looking at your profile. Find out who.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Hey -->
+                </div>
+                <!-- end left side -->
+                <!-- start section -->
+                <div class="section col-sm-7">
+                    <div class="social ps-3 pe-3 pt-3 pb-3">
+                        <label for="Email1" class="form-text pb-3">Social Media template by w3.css</label>
+                        <input type="email" class="form-control" id="Email1" value="Status: Feeling Blue">
+                        <div class="button mt-3">
+                            <button>
+                                <i class="fa-solid fa-pencil me-1"></i>
+                                <span >Post</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post-1 mt-3 pt-4 pb-3 px-3 ps-3">
+                        <div class="title position-relative pb-4 border-bottom">
+                            <img src="imgs/nav.png" alt="" class="img-fluid">
+                            <span class="fs-4 ps-3">John Doe</span>
+                        </div>
+                        <div class="content pt-3">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="images pb-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-3">
+                                        <img src="imgs/forest.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <img src="imgs/lights.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up me-1"></i>
+                                <span >Like</span>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-comment me-1"></i>
+                                <span>Comment</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post-1 post-2 mt-3 pt-4 pb-3 px-3 ps-3">
+                        <div class="title position-relative pb-4 border-bottom">
+                            <img src="imgs/avatar5.png" alt="" class="img-fluid">
+                            <span class="fs-4 ps-3">Jane Doe</span>
+                        </div>
+                        <div class="content pt-3">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="like">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up me-1"></i>
+                                <span >Like</span>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-comment me-1"></i>
+                                <span>Comment</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post-1 post-3 mt-3 pt-4 pb-3 px-3 ps-3">
+                        <div class="title position-relative pb-4 border-bottom">
+                            <img src="imgs/avatar6.png" alt="" class="img-fluid">
+                            <span class="fs-4 ps-3">Jane Doe</span>
+                        </div>
+                        <div class="images mt-3 pb-3">
+                            <div class="pb-3">
+                                Have you seen this?
+                            </div>
+                            <img src="imgs/nature.jpg" alt="" class="img-fluid w-100">
+                        </div>
+                        <div class="content pt-3">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="like">
+                            <button>
+                                <i class="fa-solid fa-thumbs-up me-1"></i>
+                                <span >Like</span>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-comment me-1"></i>
+                                <span>Comment</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end section -->
+                <!-- start right side -->
+                <div class="right-side col-sm-2">
+                    <div class="Upcoming px-3 py-3 mb-4">
+                        <div class="text-center pb-3">
+                            Upcoming Events:
+                        </div>
+                        <img src="imgs/forest.jpg" alt="" class="img-fluid">
+                        <p class="text-center fw-medium pt-3">Holiday</p>
+                        <p class="text-center">Friday 15:00</p>
+                        <button class="w-100 text-center py-1">Info</button>
+                    </div>
+                    <div class="Upcoming px-3 py-3 mb-4 text-center">
+                        <div class="text-center pb-3 fs-5">
+                            Friend Request
+                        </div>
+                        <img src="imgs/avatar6.png" alt="" class="img-fluid h-75 w-75">
+                        <p class="text-center">Jane Doe</p>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <button class="button-1 text-center col-sm-6 py-2 mb-2">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                                <button class="button-2 text-center py-2 col-sm-6 mb-2">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texts d-flex justify-content-center align-items-center mt-4">
+                        ADS
+                    </div>
+                    <div class="icons d-flex justify-content-center align-items-center mt-4">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                </div>
+                <!-- end right side -->
+            </div>
+        </div>
+    </div>
+
+    <!-- start footeer -->
+    <footer>
+        <div class="foot pt-4 pb-4 ps-4">Footer</div>
+        <div class="Powered pt-3 pb-3 ps-4">
+            Powered by <a href="#"> w3.css</a>
+        </div>
+    </footer>
+    <!-- end footeer -->
+
+
+    <script src="file.js/all.min.js"></script>
+    <script src="file.js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
